@@ -20,7 +20,7 @@ function App() {
         <ContentCard
           cardImg={johnDigi}
           cardTitle="John's DiGi Den"
-          cardDescription="Enter John's DiGi Den & keep up to date with all the latest tech gadgets and news"
+          cardDescription="Enter John's DiGi Den & keep up to date with all the latest digital gadgets and news"
         />
         <ContentCard
           cardImg={thinkAgain}
