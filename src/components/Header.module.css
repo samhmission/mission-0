@@ -1,0 +1,117 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brandContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logoContainer {
+  margin-right: 10px;
+}
+
+.brandLogo {
+  border-radius: 50%;
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.brandName {
+  font-family: "Source Code Pro", sans-serif;
+  font-size: 20px;
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.navContainer div {
+  font-family: "Source Code Pro", sans-serif;
+  font-size: 18px;
+  padding: 0px 20px;
+  text-align: center;
+  align-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for background change */
+}
+
+.navContainer div:hover {
+  background-color: #fff;
+}
+
+.loginBtn {
+  padding: 0.5rem 2rem;
+  background-color: rgb(177, 53, 53);
+  color: #fff;
+  font-weight: 800;
+  transition: background-color 0.3s;
+}
+
+.loginBtn:hover {
+  background-color: red !important;
+}
+
+/* Mobile Navigation */
+.mobileNavMenu {
+  display: none; /* Hidden by default */
+}
+
+.mobileNavLinks {
+  display: none; /* Hide the mobile menu links by default */
+  flex-direction: row;
+  background-color: #fff;
+  position: absolute;
+  top: 65px; /* Position just below the header */
+  left: 0;
+  right: 0;
+  z-index: 1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mobileNavLinks .mobileNavBtn {
+  font-family: "Source Code Pro", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  width: 25%; /* Take up 25% of the space */
+  padding: 15px;
+  background-color: transparent; /* Avoid overriding the default button styles */
+}
+
+.mobileNavLinks .mobileNavBtn:hover {
+  background-color: #ccc; /* General hover color for mobile buttons */
+}
+
+.mobileNavLinks .loginBtn {
+  background-color: rgb(177, 53, 53); /* Keep original background */
+  color: #fff;
+  font-weight: 800;
+  transition: background-color 0.3s;
+}
+
+.mobileNavLinks .loginBtn:hover {
+  background-color: red; /* Keep the login hover effect */
+}
+
+/* Responsive styles for mobile screens */
+@media (max-width: 768px) {
+  .navContainer {
+    display: none; /* Hide the regular navigation on mobile */
+  }
+
+  .mobileNavMenu {
+    display: block; /* Show the hamburger menu */
+  }
+
+  /* Show the mobileNavLinks only when the menu is open */
+  .mobileNavLinks {
+    display: flex; /* Show the menu when toggled on mobile */
+  }
+}

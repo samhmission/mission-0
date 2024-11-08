@@ -1,0 +1,32 @@
+.cardContainer {
+  width: 300px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.cardContainer img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.cardContainer h1 {
+  font-size: 1.2em;
+  color: rgb(177, 53, 53);
+  margin: 10px 15px 0;
+  font-family: "Source Code Pro", sans-serif;
+}
+
+.cardContainer h2 {
+  font-family: "Source Code Pro", sans-serif;
+  font-size: 1em;
+  color: #666;
+  margin: 10px 15px 15px;
+}
+
+.cardContainer:hover {
+  transform: translateY(-5px); /* Subtle lift effect on hover */
+}

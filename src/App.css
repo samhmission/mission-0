@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+html,
+body,
+#root,
+.pageContainer {
+  height: 100%; /* Makes these elements take up the full viewport height */
+  width: 100%; /* Makes these elements take up the full viewport width */
+  margin: 0; /* Removes any default margin */
+  padding: 0; /* Removes any default padding */
+  display: flex;
+  flex-direction: column; /* Stacks header, main content, etc. vertically */
+}
+
+.pageContainer {
+  font-family: Arial, sans-serif;
+  background-color: #ccc;
+  color: #333;
+}
+
+.headerContainer {
+  background-color: #ccc;
+  padding: 10px;
+}
+
+.cardContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  background-color: #ccc;
+  padding: 30px;
+}
+
+/* Responsive styles for mobile screens */
+@media (max-width: 768px) {
+  .heroContainer {
+    margin-bottom: 15px;
+  }
+
+  .headerContainer {
+    padding: 5px; /* Reduces padding for smaller screens */
+  }
+
+  .cardContainer {
+    flex-direction: column; /* Stacks cards vertically on mobile */
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .cardContainer .card {
+    width: 100%; /* Makes cards full-width on mobile */
+  }
+}
