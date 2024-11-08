@@ -18,8 +18,8 @@ This project is the frontend of **Mission 0 DEV**, built using **React** and **V
    ```bash
    npm run dev
 
-Roadmap
+## Roadmap
 
-  Implement core functionality
-  Add responsive design and components
-  Expand features based on requirements
+ - Implement core functionality
+ - Add responsive design and components
+ - Expand features based on requirements
